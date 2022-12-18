@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  game:
+    container_name: game
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - '80:8080'
